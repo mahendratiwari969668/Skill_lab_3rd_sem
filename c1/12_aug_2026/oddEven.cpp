@@ -4,10 +4,10 @@
 using namespace std;
 
 int main(){
-    int a ;
-    cout<<"Enter the value of a : ";
-    cin>>a;
+    int n ;
+    cout<<"Enter the value of n : ";
+    cin>>n;
     
-    if(a%2==0) cout<<"Number is Even";
-    else cout<<"Number is Odd";
+    if(n%2==0) cout<<n<<" is Even";
+    else cout<<n<< " is Odd";
 }
