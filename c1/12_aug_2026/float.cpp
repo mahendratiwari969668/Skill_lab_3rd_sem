@@ -9,5 +9,5 @@ int main(){
     cin>>a;
     cout<<"Enter the value of b : ";
     cin>>b;
-    cout<<"Sum of "<<a<<" + "<<b<<" is "<<a+b;
+    cout<<"Sum of "<<a<<" * "<<b<<" is "<<a*b;
 }
