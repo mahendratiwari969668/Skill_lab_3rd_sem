@@ -26,14 +26,11 @@ int main() {
     int total = 0;
 
     for (int i = 0; i < 5; i++) {
-
         cout << "Enter marks for " << subjects[i] << ": ";
         cin >> marks[i];
-
         if (marks[i] < 33) {
             shortage = true;
         }
-
         total += marks[i];
     }
 
@@ -62,22 +59,16 @@ int main() {
     }
     cout << "           REPORT CARD\n";
   
-
     cout << "Name       : " << name << endl;
     cout << "Roll No    : " << rollNo << endl;
-
     cout << "\nSubject-wise Marks:\n";
 
     for (int i = 0; i < 5; i++) {
         cout << subjects[i] << " : " << marks[i] << endl;
     }
-
-  
     cout << "Total Marks : " << total << " / 500" << endl;
     cout << "Percentage  : " << percentage << "%" << endl;
     cout << "Grade       : " << grade << endl;
-
-    // Check Pass / Fail
     if (shortage == true) {
         cout << "Result      : FAIL" << endl;
     }
