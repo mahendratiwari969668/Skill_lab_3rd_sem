@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int m,n;
+    cout<<"Enter the row and column of 1st matrix ";
+    cin>>m>>n;
+
+    if(m <= 0 || m > 100 || n <= 0 || n > 100){
+        cout<<"Invalid matrix size";
+        return 0;
+    }
+
+    int arr[m][n];
+
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            cin>>arr[i][j];
+        }
+    }
+
+    cout<<"Transpose matrix:"<<endl;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<arr[j][i]<<" ";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+
+
