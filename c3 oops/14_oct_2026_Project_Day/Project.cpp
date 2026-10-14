@@ -54,6 +54,8 @@ public:
         return nights * 2000;
     }
 };
+
+
 class SuiteRoom : public Room {
 public:
     SuiteRoom(int roomNo, string name, int n)
@@ -87,19 +89,21 @@ int main() {
     cout<<"--------------------------------"<<endl;
 
    
-    cout<< "Room Type   : Standard Room"<<endl;
+    cout<< "Room Type   : Deluxe Room"<<endl;
     d.showDetails();
     cout<<"Room Fee    : Rs. "<<d.calculateBill()<<endl;
     totalBill += d.calculateBill();
 
-    cout<<"--------------------------------"<<endl;
-
     
-    cout<<"Room Type   : Standard Room"<<endl;
+    cout<<"--------------------------------"<<endl;
+    
+    cout<<"Room Type   : Suite Room"<<endl;
     u.showDetails();
     cout<<"Room Fee    : Rs. "<<u.calculateBill()<<endl;
     totalBill += u.calculateBill();
-   
+    
+    cout<<"--------------------------------"<<endl;
+    
     cout<<"Total Collection Today : Rs. " <<totalBill <<endl;
 
     return 0;
