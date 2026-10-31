@@ -29,7 +29,7 @@ int main(){
     int hi = n - 1; 
     
     while(lo <= hi){ 
-        int mid = (lo + hi) / 2; 
+        int mid = lo + (hi - lo); 
         
         if(arr[mid] > target) 
             hi = mid - 1; 
